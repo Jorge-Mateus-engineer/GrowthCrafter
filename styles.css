@@ -1,0 +1,190 @@
+:root {
+  --main-color-shade1: #112e6b;
+  --main-color: #184199;
+  --main-color-tint1: #d1d9eb;
+  --grey-color-shade1: #191919;
+  --grey-color: #2a2a29;
+  --grey-color-tint1: #7f7f7f;
+  --accent-color-shade1: #b5426c;
+  --accent-color: #e25387;
+  --backgroud: #e8ecf5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey-color);
+  background-color: var(--backgroud);
+}
+
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/*Barra de navagacion*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  height: 8rem;
+  background-color: var(--main-color-tint1);
+}
+
+.main-logo {
+  height: 6rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.main-link,
+.cta-link {
+  transition: all 0.3s;
+}
+
+.main-link:link,
+.main-link:visited {
+  color: var(--grey-color-shade1);
+  text-decoration: none;
+}
+
+.main-link:active,
+.main-link:hover {
+  color: var(--accent-color);
+}
+
+.cta-link {
+  padding: 1rem 1.5rem;
+  background-color: var(--accent-color);
+  border-radius: 15px;
+  color: var(--backgroud);
+}
+
+.cta-link:link,
+.cta-link:visited {
+  text-decoration: none;
+}
+
+.cta-link:hover,
+.cta-link:active {
+  background-color: var(--accent-color-shade1);
+}
+
+/*Hero section*/
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+  max-width: 140rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.section-hero {
+  height: calc(100vh - 8rem);
+  padding: 12rem 4rem;
+  background-color: var(--main-color-tint1);
+}
+
+.hero-text {
+  height: 100%;
+}
+
+.primary-heading {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  line-height: 1.05;
+  color: var(--grey-color);
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.hero-link {
+  font-size: 2rem;
+  padding: 1.5rem 2.5rem;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.hero-cta:visited,
+.hero-cta:link {
+  background-color: var(--accent-color);
+  color: var(--backgroud);
+}
+
+.hero-cta:hover,
+.hero-cta:active {
+  background-color: var(--accent-color-shade1);
+}
+
+.hero-info:link,
+.hero-info:visited {
+  color: var(--grey-color-shade1);
+  background-color: var(--backgroud);
+}
+
+.hero-info:hover,
+.hero-info:active {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px var(--backgroud);
+}
+
+.hero-img-container {
+  height: 100%;
+}
+
+.hero-img {
+  transform: scale(1.3);
+  width: 100%;
+  z-index: 10;
+}
+
+/*Seccion de promesas de valor*/
+
+.section-why {
+  margin-top: 5rem;
+}
+
+.grid-why {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.secondary-heading {
+  font-size: 4rem;
+}
