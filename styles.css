@@ -320,3 +320,32 @@ body {
   font-size: 2.5rem;
   line-height: 1.5;
 }
+
+/*seccion cta*/
+
+.cta-heading {
+  font-size: 5rem;
+  color: var(--accent-color);
+  margin-bottom: 5rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.cta-img-container {
+  height: 50rem;
+  width: 100%;
+}
+
+.cta-img {
+  height: 100%;
+}
+
+.cta-form {
+  background-color: #5356c9;
+  height: 100%;
+}
