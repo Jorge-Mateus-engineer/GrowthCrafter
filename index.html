@@ -328,15 +328,51 @@
       </section>
       <section class="section-cta" id="cta">
         <div class="container">
-          <h2 class="cta-heading">¡Asegura tu lugar en la Masterclass!</h2>
           <div class="cta">
             <div class="cta-img-container">
               <img src="./img/cta2.jpeg" class="cta-img" />
             </div>
             <div class="cta-form">
-              <form name="registro" netlify>
-                <input type="text" placeholder="text" name="text" />
-                <button>send</button>
+              <h2 class="cta-heading">¡Asegura tu lugar en la Masterclass!</h2>
+              <form class="form" name="registro" netlify>
+                <div>
+                  <label for="nombre">Nombre</label>
+                  <input
+                    id="nombre"
+                    type="text"
+                    placeholder="Nombre Completo"
+                    name="Nombre"
+                  />
+                </div>
+                <div>
+                  <label for="correo">Correo</label>
+                  <input
+                    id="correo"
+                    type="email"
+                    placeholder="Correo Electronico"
+                    name="Correo"
+                  />
+                </div>
+                <div>
+                  <label for="where">Donde se entero de la Masterclass</label>
+                  <select id="where">
+                    <option>Seleccione una opción:</option>
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Correo">Correo</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="pago">Metodo de pago</label>
+                  <select id="pago">
+                    <option>Seleccione:</option>
+                    <option value="Linkedin">PayPal</option>
+                    <option value="Instagram">Payoneer</option>
+                    <option value="Correo">Transferencia</option>
+                  </select>
+                </div>
+                <button class="cta-btn">¡Inscribirme!</button>
               </form>
               <!-- <div id="paypal-button-container"></div>
               <script>
