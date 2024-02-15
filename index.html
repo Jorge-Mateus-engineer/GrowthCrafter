@@ -346,6 +346,7 @@
                     type="text"
                     placeholder="Nombre Completo"
                     name="Nombre"
+                    required
                   />
                 </div>
                 <div>
@@ -355,30 +356,27 @@
                     type="email"
                     placeholder="Correo Electronico"
                     name="Correo"
+                    required
                   />
                 </div>
                 <div>
-                  <label for="where"
-                    >Donde se entero de la Masterclass
-                    <select id="where" name="where[]">
-                      <option>Seleccione una opción:</option>
-                      <option value="Linkedin">Linkedin</option>
-                      <option value="Instagram">Instagram</option>
-                      <option value="Correo">Correo</option>
-                      <option value="Otro">Otro</option>
-                    </select>
-                  </label>
+                  <label for="where">Donde se entero de la Masterclass </label>
+                  <select id="where" name="where[]" required>
+                    <option>Seleccione una opción:</option>
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Correo">Correo</option>
+                    <option value="Otro">Otro</option>
+                  </select>
                 </div>
                 <div>
-                  <label for="pago"
-                    >Metodo de pago
-                    <select id="pago" name="pago[]">
-                      <option>Seleccione:</option>
-                      <option value="Linkedin">PayPal</option>
-                      <option value="Instagram">Payoneer</option>
-                      <option value="Correo">Transferencia</option>
-                    </select>
-                  </label>
+                  <label for="pago">Metodo de pago </label>
+                  <select id="pago" name="pago[]" required>
+                    <option>Seleccione:</option>
+                    <option value="Linkedin">PayPal</option>
+                    <option value="Instagram">Payoneer</option>
+                    <option value="Correo">Transferencia</option>
+                  </select>
                 </div>
                 <button class="cta-btn">¡Inscribirme!</button>
               </form>
