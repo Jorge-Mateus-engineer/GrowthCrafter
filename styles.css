@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background-color: var(--accent-color);
   border-radius: 6px;
-  outline: 1px solid var(--grey-color);
+  outline: 2px transparent var(--grey-color);
 }
 
 html {
