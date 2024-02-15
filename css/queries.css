@@ -390,7 +390,7 @@
 
   .grid-why {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 10rem);
+    grid-template-rows: repeat(12, 18rem);
   }
 
   .why-icon {
@@ -403,23 +403,24 @@
   }
 
   .tertiary-heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .why-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1;
   }
 
   .idea-img,
   .team-img,
   .profit-img {
-    height: 100%;
+    height: 80%;
     width: auto;
   }
 
   .thinking-img {
-    object-fit: cover;
+    transform: scale(0.5);
+    height: 150%;
   }
 
   .business-img {
