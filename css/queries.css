@@ -281,6 +281,7 @@
   .grid-why {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 18rem);
+    row-gap: 1rem;
   }
 
   .why-text-container {
@@ -308,11 +309,7 @@
   .team-img,
   .profit-img,
   .thinking-img,
-  .business-img {
-    height: 130%;
-    width: auto;
-  }
-
+  .business-img,
   .teacher-img {
     height: 100%;
     width: auto;
@@ -360,6 +357,7 @@
   }
 }
 
+/*464 px*/
 @media (max-width: 29em) {
   .hero {
     gap: 2rem;
@@ -390,6 +388,29 @@
     justify-content: space-between;
   }
 
+  .grid-why {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 10rem);
+  }
+
+  .why-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .why-text-container {
+    padding: 1rem;
+  }
+
+  .tertiary-heading {
+    font-size: 1.5rem;
+  }
+
+  .why-text {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
   .idea-img,
   .team-img,
   .profit-img {
@@ -398,7 +419,7 @@
   }
 
   .thinking-img {
-    height: 150%;
+    object-fit: cover;
   }
 
   .business-img {

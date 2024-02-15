@@ -18,6 +18,10 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
+    if (href !== "#" && !href.startsWith("#") && href.startsWith("http")) {
+      window.location.href = href;
+    }
+
     // Close mobile naviagtion
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
