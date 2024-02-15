@@ -358,38 +358,30 @@
                   />
                 </div>
                 <div>
-                  <label for="where">Donde se entero de la Masterclass</label>
-                  <select id="where">
-                    <option>Seleccione una opción:</option>
-                    <option value="Linkedin">Linkedin</option>
-                    <option value="Instagram">Instagram</option>
-                    <option value="Correo">Correo</option>
-                    <option value="Otro">Otro</option>
-                  </select>
+                  <label for="where"
+                    >Donde se entero de la Masterclass
+                    <select id="where" name="where[]">
+                      <option>Seleccione una opción:</option>
+                      <option value="Linkedin">Linkedin</option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="Correo">Correo</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </label>
                 </div>
                 <div>
-                  <label for="pago">Metodo de pago</label>
-                  <select id="pago">
-                    <option>Seleccione:</option>
-                    <option value="Linkedin">PayPal</option>
-                    <option value="Instagram">Payoneer</option>
-                    <option value="Correo">Transferencia</option>
-                  </select>
+                  <label for="pago"
+                    >Metodo de pago
+                    <select id="pago" name="pago[]">
+                      <option>Seleccione:</option>
+                      <option value="Linkedin">PayPal</option>
+                      <option value="Instagram">Payoneer</option>
+                      <option value="Correo">Transferencia</option>
+                    </select>
+                  </label>
                 </div>
                 <button class="cta-btn">¡Inscribirme!</button>
               </form>
-              <!-- <div id="paypal-button-container"></div>
-              <script>
-                paypal
-                  .Buttons({
-                    createOrder: function (data, actions) {
-                      return actions.order.create({
-                        purchase_units: [{ amount: { value: "30" } }],
-                      });
-                    },
-                  })
-                  .render("#paypal-button-container");
-              </script> -->
             </div>
           </div>
         </div>
