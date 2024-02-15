@@ -16,6 +16,26 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.6rem rgba(226, 83, 135, 0.5);
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+  height: 0;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--main-color-tint1);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  outline: 1px solid var(--grey-color);
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
