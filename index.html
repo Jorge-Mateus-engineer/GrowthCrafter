@@ -338,7 +338,12 @@
             </div>
             <div class="cta-form">
               <h2 class="cta-heading">¡Asegura tu lugar en la Masterclass!</h2>
-              <form class="form" name="registro" netlify>
+              <form
+                class="form"
+                name="registro"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbw7eiQTUBH5_Gp8jr8MnANilbUIz5YfnFoqxe9vaecEwcY9deh2I1TcDJI6arfN36ItlA/exec"
+              >
                 <div>
                   <label for="nombre">Nombre</label>
                   <input
@@ -361,7 +366,7 @@
                 </div>
                 <div>
                   <label for="where">Donde se entero de la Masterclass </label>
-                  <select id="where" name="where[]" required>
+                  <select id="where" name="Where" required>
                     <option>Seleccione una opción:</option>
                     <option value="Linkedin">Linkedin</option>
                     <option value="Instagram">Instagram</option>
@@ -371,7 +376,7 @@
                 </div>
                 <div>
                   <label for="pago">Metodo de pago </label>
-                  <select id="pago" name="pago[]" required>
+                  <select id="pago" name="Pago" required>
                     <option>Seleccione:</option>
                     <option value="Linkedin">PayPal</option>
                     <option value="Instagram">Payoneer</option>
