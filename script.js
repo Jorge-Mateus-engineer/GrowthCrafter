@@ -1,4 +1,6 @@
 const allLinks = document.querySelectorAll("a:link");
+const overlay = document.querySelector(".overlay-news");
+const closeButton = document.querySelector(".close-btn");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -46,4 +48,20 @@ window.addEventListener("load", function () {
       alert("Formulario enviado exitosamente");
     });
   });
+});
+
+/*Controles del overlay de el newsletter */
+
+window.addEventListener("load", (e) => {
+  setTimeout(() => {
+    overlay.classList.remove("hidden");
+    document.documentElement.style.overflowY = "hidden";
+    overlay.style.top = `${window.scrollY}px`;
+  }, 5000);
+});
+
+closeButton.addEventListener("click", () => {
+  overlay.style.top = `0px`;
+  overlay.classList.add("hidden");
+  document.documentElement.style.overflowY = "scroll";
 });
