@@ -33,20 +33,25 @@ window.addEventListener("load", function () {
   const form = document.getElementById("my-form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: "POST",
-      body: data,
-    }).then(() => {
-      document.getElementById("nombre").value = "";
-      document.getElementById("correo").value = "";
-      document.getElementById("where").value =
-        document.getElementById("where").options[0].value;
-      document.getElementById("pago").value =
-        document.getElementById("pago").options[0].value;
-      alert("Formulario enviado exitosamente");
-    });
+    if (document.getElementById("pago").value == "Seleccione:") {
+      alert("Por favor seleccione un método de pago");
+    } else {
+      const data = new FormData(form);
+      const action = e.target.action;
+
+      fetch(action, {
+        method: "POST",
+        body: data,
+      }).then(() => {
+        document.getElementById("nombre").value = "";
+        document.getElementById("correo").value = "";
+        document.getElementById("where").value =
+          document.getElementById("where").options[0].value;
+        document.getElementById("pago").value =
+          document.getElementById("pago").options[0].value;
+        alert("Formulario enviado exitosamente");
+      });
+    }
   });
 });
 
